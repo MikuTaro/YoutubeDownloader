@@ -1,3 +1,67 @@
 * {
     box-sizing: border-box;
+    margin: 0 0 0 0;
+}
+
+body {
+    background-image: url('./assets/main.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: #df91ca;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fbd278;;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 75%;
+}
+
+header nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+header nav a button {
+    padding: 10px 5px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+header nav a button:hover {
+    background-color: black;
+    color: #fbd278;
+}
+
+header nav img {
+    width: 50px;
 }
