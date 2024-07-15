@@ -3,36 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Critters</title>
+    <title>Youtube Downloader</title>
     <link rel="stylesheet" href="index.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <header id="nav">
+    <header class="navBar">
         <nav>
-            <img src="./assets/logo.svg" alt="logo">
             <ul>
-                <li><a href="#main">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <a href="#"><li class="home">Home</li></a>
+                <a href="#"><li class="about">About</li></a>
+                <a href="#"><li class="contact">Contact</li></a>
             </ul>
-            <a href="#">
-                <button type="button">Buy Token</button>
-            </a>
         </nav>
     </header>
-    <main class="main">
-        <section id="hero">
-            <h1>Welcome to Crypto Critters</h1>
-            <p>A cryptocurrency platform for collectibles and game tokens.</p>
-            <a href="#">Discover More</a>
-        </sectio>
-    </main>
-    <main class="about">
-        <section id="about">
-            <h2>About Crypto Critters</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod libero vel orci semper, vel suscipit nunc dignissim. Donec consectetur, tortor id consectetur malesuada, nisi velit condimentum metus, sed posuere risus justo vel nunc. Nulla facilisi. Nullam faucibus, dolor a scelerisque rutrum, justo nunc sollicitudin lacus, at ultricies ipsum ex at velit. Sed varius, justo et consectetur semper, nunc velit rutrum velit, vel consectetur nunc velit sed massa.</p>
-        </section>
+    <main id="main">
+        <div class="main">
+            <img src="./assets/YouTube-Logo.wine.svg" alt="YT Logo">
+            <h1>Downloader</h1>
+            <input type="text" id="videoUrl" placeholder="Enter video URL">
+            <div class="dropdown">
+                <button class="dropbtn">Download</button>
+                <div class="dropdown-content">
+                    <button onclick="downloadVideo('420p')">420p</button>
+                    <button onclick="downloadVideo('720p')">720p</button>
+                    <button onclick="downloadVideo('1080p')">1080p</button>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h1>Download Your Favorite YouTube Videos with Ease!</h1>
+            <p>Looking for a simple way to download your favorite YouTube videos for offline viewing? Look no further! Our YouTube Downloader lets you save videos directly to your device with just a few clicks. Whether it's for offline enjoyment, educational purposes, or archiving your favorite content, our tool has you covered.</p>
+            <div class="desc">
+                <ul>
+                    <h3>Key Features:</h3>
+                    <li><span>High-Quality Downloads:</span> Choose from various resolutions, including 1080p, 720p, and even 4K.</li>
+                    <li><span>Audio Extraction:</span> Extract and download MP3 audio from any video.</li>
+                    <li><span>User-Friendly Interface:</span> Easy to navigate, even for beginners.</li>
+                    <li><span>Fast Download Speeds:</span> Enjoy quick and efficient downloads without the wait.</li>
+                    <li><span>Multi-Format Support:</span> Save videos in MP4, MKV, FLV, and more.</li>
+                </ul>
+                <ul>
+                    <h3>How to Use:</h3>
+                    <li><span>Enter a YouTube Video URL:</span> Paste the URL of the video you want to download into the input field.</li>
+                    <li><span>Choose a Download Format:</span> Select the desired format for your video (e.g., MP4, MKV, FLV).</li>
+                    <li><span>Click "Download":</span> Start downloading your video to your device.</li>
+                    <li><span>Check the Progress Bar:</span> Monitor the download status and download speed.</li>
+                    <li><span>View the Result:</span> Once the download is complete, you'll find your video saved in the specified format on your device.</li>
+                </ul>
+            </div>
+            
+
+        </div>
+        <div class="result">
+
+        </div>
     </main>
 </body>
 </html>
